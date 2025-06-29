@@ -3,7 +3,8 @@ import type { RootState } from '../store'
 import { quizData } from '@/home/quizData'
 
 const initialState = {
-    question: quizData,
+    questions: quizData,
+    currentQuestionIndex: 0
 }
 
 export const quizSlice = createSlice({
